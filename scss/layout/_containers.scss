@@ -1,0 +1,274 @@
+.banner {
+	margin: 40px auto 10px auto;
+	@media #{$brk-narrow} {
+	line-height: 1.2;
+	padding: 40px 0;
+	background: $color-primary;
+	color: #fff;
+	margin: 0;
+	}
+}
+.profile-img {
+	border-radius: 50%;
+	width: 40%;
+	margin: 40px auto 0 auto;
+	border: solid 2px $color-primary;
+	@media #{$brk-narrow} {
+		border: solid 2px #fff;
+		margin-top: 70px;
+		width: 20%; 
+		margin: 30px auto 0 auto;
+	}
+	@media #{$brk-wide} {
+		width: 15%;
+	}	
+}
+.name {
+	margin-bottom: 15px;
+}
+.main-nav {
+	@media #{$brk-narrow} {
+		background: darken($color-primary, 10%);
+		box-shadow: 0 8px 6px -6px #999;
+		z-index: 10000;
+	}
+}
+.main-nav ul {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	@media #{$brk-narrow} {
+		margin-top: 0;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+}
+.menu-item {
+	background: $color-primary;
+	width: 200px;
+	margin-bottom: 10px;
+	a {
+		color: #fff;
+	}
+	@media #{$brk-narrow} {
+	background: none;
+	margin-bottom: 0;
+	}
+}
+
+.menu-item:hover {
+	background: lighten($color-primary, 20%);
+	transition: .5s;
+	a {
+		color: #fff;
+		}
+}
+
+.main-nav li a {
+	display: block;
+	padding: 20px;
+}
+
+.main-content {
+	padding: 5%;
+	margin: 10px auto;
+}
+
+.columns {
+	display: flex;
+	flex-direction: column;
+		
+	@media #{$brk-narrow} {
+		flex-direction: row;
+		margin: 10px auto 40px auto;
+		align-items: space-between;
+	}
+}
+
+.col {
+	width: 100%;
+	margin: 20px auto;
+	
+	h1 {
+		line-height: 2;
+	}
+	
+	h2 {
+			margin-top: 20px;
+		}
+		
+		p {
+			margin-top: 10px;
+		}
+	
+	img {
+			border: solid 1px $color-primary;
+			padding: 8px;
+			width: 80%;
+			background: $color-primary;
+			transition: .3s;
+		}
+		
+	img:hover {
+		background: lighten($color-primary, 20%);
+	}
+	
+	@media #{$brk-narrow} {
+		width: 40%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+}
+
+.button {
+	margin: 25px auto;
+	font-size: 1em;
+	background: $color-primary;
+	color: #fff;
+	padding: 5px;
+	border-radius: 5%;
+	width: 40%;
+	box-shadow: 0px 5px 0px 0px #004a9d;
+	transition: .3s;
+}
+
+.button:hover {
+	background: lighten($color-primary, 5%);
+}
+
+#contact {
+	margin-top: 40px;
+	width: 120px;
+	
+	display: block;
+	a {
+		display: block;
+		padding: 10px 10px;
+	}
+}
+
+.col h1 a {
+	display: block;
+}
+
+.title {
+	margin: 30px auto 40px auto;
+	
+	@media #{$brk-narrow} {
+// 		margin-bottom: 20px;
+	}
+	
+	@media #{$brk-wide} {
+			margin-top: 100px;
+		}
+}
+
+.flex-container {
+	
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+
+	@media #{$brk-narrow} {
+		flex-direction: row;
+		flex-wrap: wrap;
+		padding: 15px;
+	}
+	
+	.flex-item {
+		margin: 40px auto 0 auto;
+		h2 {
+			margin-top: 20px;
+		}
+		
+		p {
+			margin-top: 10px;
+		}
+		
+		img {
+			border: solid 1px $color-primary;
+			padding: 8px;
+			width: 80%;
+		}
+		.rounded {
+				border-radius: 50%;
+				width: 60%;
+				padding: 0;
+				border: solid 4px $color-primary;
+				
+				
+				@media #{$brk-narrow} {
+					margin-top: 25px;
+					width: 50%;
+					padding: 0;
+				}	
+				
+				@media #{$brk-wide} {
+					margin-top: 25px;
+					width: 80%;
+				}	
+			}
+		.rounded:hover {
+			border: solid 4px lighten($color-primary, 20%);
+		}
+		@media #{$brk-narrow} {
+			width: 45%;
+			padding: 15px;
+			margin-top: 5px;
+		}
+		@media #{$brk-wide} {
+			width: 25%;
+			padding: 3%;
+		}
+	}
+	.feature img {
+		border: none;
+	}
+}
+footer {
+	background: lighten($color-primary, 50%);
+	padding: 2%;
+	p {
+		line-height: 1.5;
+	}
+	ul {
+		margin: 20px;
+	}
+}
+.social-icons {
+	display: flex;
+	justify-content: center;
+}
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 35px;
+  height: 35px;
+  background-size: 35px 35px;
+  opacity: .4;
+  transition: all .5s;
+  @media #{$brk-narrow} {
+	width: 40px;
+	height: 40px;
+	background-size: 40px 40px;
+	margin: 10px 10px 15px 10px;
+  }
+}
+a.twitter {
+  background-image: url(../img/twitter.svg);
+}
+a.linkedin {
+  background-image: url(../img/linkedin.svg);
+}
+a.github {
+  background-image: url(../img/github.svg);
+}
+a.mail {
+  background-image: url(../img/mail.svg);
+}
+a.social:hover {
+  opacity: 1;
+}
